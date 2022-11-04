@@ -1,0 +1,41 @@
+def TRYcalc():
+    print("TRYcalc v1.0")
+    time.sleep(1)
+    print("commands can be found in TRY.txt")
+    while True:
+        code2 = 0
+        code3 = 0
+        code = input("//: ")
+        if code == "try":
+            print("Be specific.")
+            
+        elif code == "don't try":
+            print("Can't do that, it's my thing.")
+            
+        elif code == "try add":
+            code2 == input(">?< + >?< //: ")
+            code3 == input(f"{code2} + >?< //: ")
+            output == code2 + code3
+            print(f"I tried and I got {output}")
+            
+        elif code == "try subtract":
+            code2 = input(">?< - ? //: ")
+            code3 = input(f"{code2} - >?< //: ")
+            output = code2 - code3
+            print(f"I tried and I got {output}")
+            
+        elif code == "try multiply":
+            code2 = input(">?< * ? //: ")
+            code3 = input(f"{code2} * >?< //:")
+            output = code2 * code3
+            print(f"I tried and I got {output}")
+            
+        elif code == "try divide":
+            code2 = input(">?< / ? //: ")
+            code3 = input(f"{code2} / >?< //: ")
+            output = code2 / code3
+            print(f"I tried and I got {output}")
+            
+        elif code == "exit":
+            print("Thanks for usage!")
+            break

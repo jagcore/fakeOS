@@ -1,0 +1,70 @@
+SHELL TEST01
+
+Unfinished build
+2022
+By Michael 'jagcore'
+
+ABOUT:
+SHELL is a simple command terminal made for the fakeOS.
+SHELL may eventually be a way to return data from a file.
+
+SHELL may also eventually be a watered down programming language,
+albiet a very limited language.
+
+SHELL is still being worked on, so if there are any issues contact a developer.
+
+VARS:
+shellinput01
+shellinput02
+
+shellVAR01 (01)
+shellVAR02 (02)
+
+VARS can be set to INT or STR
+
+COMMANDS:
+
+SHELL_PRINT
+	prints things to SHELL
+	Can print vars
+EXAMPLE:
+(01) = (text)
+SHELL_PRINT
+$PRINT$//: 01
+SHELL:
+text
+
+SHELL_PRINT
+$PRINT$//: text
+SHELL:
+text
+
+
+resetVARS
+	resets all vars to 0
+EXAMPLE:
+(01) = (text)
+resetVARS
+(01) = 0
+
+
+setVAR
+	sets the value of a var to an str or int
+	prints the new value
+EXAMPLE:
+(01) = (text)
+setVAR
+$VARtoEDIT$//: 01
+$TYPE$//: int
+$VAL$//: 12
+shellVAR01 = '12'
+(01) = (12)
+
+SHELL_END
+	ends shell
+	returns to command prompt shell
+EXAMPLE:
+SHELL_END
+(shell ends)
+
+

@@ -1,0 +1,91 @@
+# This is the library built in with fakeOS
+#SHELL
+    
+#SHELL HANDLER
+def SHELL_HANDLER():
+    SHELL_INIT()
+    # Can't change variables with funcs so they are in the handler
+    shellVAR01 = 0
+    shellVAR02 = 0
+    shellinput01 = 0
+    shellinput02 = 0
+    while True:
+        # input area
+        shell = input("//: ")
+        
+        # print command
+        if shell == "SHELL_PRINT":
+            shellinput01 = input("$PRINT$//:")
+            # checks if input is a var and prints var val
+            if shellinput01 == "01":
+                SHELL_PRINT(shellVAR01)
+            elif shellinput01 == "02":
+                SHELL_PRINT(shellVAR02)
+            # else, prints input    
+            else:
+                SHELL_PRINT(shellinput01)
+        
+        # shell end command
+        elif shell == "SHELL_END":
+            SHELL_END()
+            break
+        
+        # resetVARS
+        elif shell == "resetVARS":
+            # reseting all vars, including inputs to int(0)
+            shellVAR01 = 0
+            shellVAR02 = 0
+            shellinput01 = 0
+            shellinput02 = 0
+            
+        # setVAR
+        elif shell == "setVAR":
+            shellinput01 = input("$VARtoEDIT$//: ")
+            # checks if var being changed is 01
+            if shellinput01 == "01":
+                shellinput02 = input("$TYPE$//: ")
+                # makes the type of val str or int
+                # then sets var to val
+                if shellinput02 == "str":
+                    shellinput01 = str(input("$VAL$//: "))
+                elif shellinput02 == "int":
+                    shellinput01 = int(input("$VAL$//:"))
+                else:
+                    print("INVALID TYPE")
+                # var is now equal to the val
+                # message is printed
+                shellVAR01 = shellinput01
+                print(f"shellVAR01 = '{shellVAR01}'")
+            # the above happens here, but for var 02    
+            elif shellinput01 == "02":
+                shellinput02 = input("$TYPE$//: ")
+                # checks val type and sets var to val
+                if shellinput02 == "str":
+                    shellinput01 = str(input("$VAL$//: "))
+                elif shellinput02 == "int":
+                    shellinput01 = int(input("$VAL$//:"))
+                else:
+                    print("INVALID TYPE")
+                # var is now val
+                # message printed
+                shellVAR02 = shellinput01
+                print(f"shellVAR02 = '{shellVAR02}'")
+                
+            else:
+                print("INVALID VAR")
+
+
+# SHELL COMMANDS
+
+def SHELL_INIT():
+    print("SHELL TEST01")
+    print("see more details in shell.txt")
+    print("SHELL IS NOT COMPLETE")
+    print("This is a primitive version for now, will be updated")
+
+def SHELL_PRINT(toPrint):
+    print("SHELL:")
+    print(f"{toPrint}")
+
+def SHELL_END():
+    print("SHELL DEACTIVATED.")

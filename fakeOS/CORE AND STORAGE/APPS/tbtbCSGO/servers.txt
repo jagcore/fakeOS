@@ -1,0 +1,9 @@
+To join a server, enter '2' on the gamemode select prompt.
+Then, enter the server call when prompted.
+
+SERVERS:
+
+gcd_cs.s
+   Call: gcd
+
+   Desc: A custom duels server

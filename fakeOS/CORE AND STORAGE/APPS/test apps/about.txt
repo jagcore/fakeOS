@@ -1,0 +1,7 @@
+test apps
+
+These are some test apps to make sure that:
+
+runfile command works
+input from runfile works
+func from runfile works

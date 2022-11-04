@@ -1,0 +1,84 @@
+TURN-BASED TEXT-BASED CS:GO
+	(tb2CSGO)
+
+A project for fakeOS by:
+	Michael Blauvelt 'jagcore'
+
+Based on xkcd 91 by:
+	Randall Munroe
+
+CSGO and the CS franchise by:
+	Valve Studios
+
+VERSION 1.0:
+- release
+
+ABOUT:
+
+tb2CSGO is a text based and turn based autobattler rendition of
+CS:GO by Valve Studios. This game includes:
+
+- BASE GAME
+	A simple ranked mode is available. The ranking system is 
+	still a work-in-progress. Expect an overhaul in the future.
+
+- COMMUNITY SERVERS
+	tb2CSGO comes with an evolving servers system.
+	Updates may contain a new modpack and a new server ip.
+	Server list is in 'servers.txt'
+
+- SUBMITTING SERVERS
+	If you decide to create your own server, you
+	can submit you server to be added in a
+	future update. Further elaboration later in this about page.
+
+USAGE:
+
+tb2CSGO has a next-gen server system, allowing you
+to connect to other players. This system may take time
+to load you in however, and you can experience crashes
+or kicks on community servers.
+
+
+INSTALLATION:
+
+drag the tbtbCSGO file into the APPS folder
+copy tb2CSGO.py and paste it into core and storage
+copy everything in the mods folder and paste it into core and storage
+you can now play tb2CSGO.py
+
+
+SUBMITTING COMMUNITY SERVERS:
+
+tb2CSGO welcomes creators, and we really do want your
+ideas and creations. So, tb2CSGO has a server submission system.
+To use this system, follow these steps:
+
+Get your code. Example code can be found in 'examplemod.py'
+Your code should be able to run itself and still function.
+Remember that tb2CSGO servers run the modpack and not the core
+game. Also be sure that there are no bugs that could hurt
+the player experience.
+
+Email the code to me, whether by copy and pasting your code,
+sending the .py file, or copy pasting into a doc and inviting
+me, although I'd much rather have the .py file.
+
+My email:
+BLAUVMC@student.okaloosaschools.com
+
+I'll review the code and send you an implementation.
+If I find any bugs, I'll let you know that the code was
+rejected and tell you the error message.
+
+If you accept the implementation, I'll optimize the code to
+tb2CSGO servers and fully release the complete implementation
+in a future update. You can email me if you have any questions
+on the design process, or any other modding questions.
+
+Congratulations! You are now an official community creator!
+If you want to update the implementation, email me the new
+code and we will go through the design process again.
+
+
+Thank you for your time, and thank you for using tb2CSGO!

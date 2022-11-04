@@ -1,0 +1,28 @@
+TRYcalc by MICHAEL BLAUVELT 'jagcore'
+
+About:
+TRYcalc for fakeOS
+v1.0
+
+Simple calculator for fakeOS that tries its best
+
+
+COMMANDS:
+
+'try add' : (INPUT1) + (INPUT2)
+	desc - adds two inputs and prints sum
+
+'try subtract' : (INPUT1) - (INPUT2)
+	desc - subtracts an input from an input and prints difference
+
+'try multiply' : (INPUT1) * (INPUT2)
+	desc - multiplies two inputs and prints the product
+
+'try divide' : (INPUT1) / (INPUT2)
+	desc - divides an input by an input and prints the quotient
+
+'exit' : n/a
+	desc - breaks run loop and ends program
+
+TRYcalc is subject to change and may change in new updates
+TRYcalc is made for fakeOS, the OS that's fake
