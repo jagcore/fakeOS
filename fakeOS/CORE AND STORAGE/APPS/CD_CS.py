@@ -64,7 +64,8 @@ def firefight(friendlySkill, enemySkill, friendlyHealth, enemyHealth, friendlyWe
     print("DUEL START")
     print(f"{friendlyUser} VS {enemyUser}")
     time.sleep(1)
-    while friendlyHealth < 0 and enemyHealth < 0:
+    running = True
+    while running:
         
         roll = random.randint(1, 20)
         shots = 0
@@ -171,7 +172,8 @@ def firefight(friendlySkill, enemySkill, friendlyHealth, enemyHealth, friendlyWe
             
         time.sleep(1)
         print("---{ Shots Fired! }---")
-        
+        if friendlyHealth <= 0 or enemyHealth <= 0:
+            running = False
         
     if friendlyHealth <= 0 and enemyHealth <= 0:
         # 3 means both sides died
