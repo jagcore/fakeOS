@@ -6,4 +6,5 @@ A small project where I make a fake OS in python
 - look if it isn't obvious I don't take this seriously
 - wait i forgor i made a bad calculator too
 - and a trash shell remake
+
 Made in thonny
